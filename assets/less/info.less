@@ -1,0 +1,309 @@
+// Informacion del contacto
+.map-info-container {
+  background-color: @homestories-gray;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  .map-container {
+    position: relative;
+    min-height: 1px;
+    float: left;
+    width: percentage(9 / 14);
+    height: 100%;
+  }
+  .map-info-content {
+    position: relative;
+    min-height: 1px;
+    float: left;
+    width: percentage(5 / 14);
+    height: 100%;
+    font-weight: @font-normal;
+    background-color: @homestories-gray;
+    padding-top: 6%;
+    padding-left: 4%;
+    padding-right: 8%;
+    padding-bottom: 0;
+
+    .container-map-info-scroll {
+      overflow-y: scroll;
+      height: 100%;
+    }
+    .map-info-logo {
+      padding-bottom: 10%;
+      margin-left: 0;
+      width: 95%
+    }
+    p {
+      font-size: 15px;
+      line-height: 30px;
+      color: @body-bg;
+      line-height: 1.6;
+      margin-bottom: 0;
+    }
+    h5 {
+      font-size: 15px;
+      line-height: 30px;
+      color: @body-bg;
+      line-height: 1.6;
+      margin: 0;
+      padding-top: 42px;
+    }
+    h6 {
+      font-size: 15px;
+      line-height: 30px;
+      color: @body-bg;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    .schedule-info {
+      padding-top: 10%;
+      padding-bottom: 10%;
+      padding-right: 20%;
+
+      .closed {
+        margin-right: -17px;
+      }
+      li {
+        font-size: 15px;
+        line-height: 30px;
+        color: @body-bg;
+        line-height: 1.6;
+        margin: 0;
+
+        span {
+          float: right;
+        }
+      }
+    }
+    .share-buttons {
+      a {
+        .social-button {
+          height: 20px;
+          padding-left: 12px;
+        }
+        .social-button-1 {
+          padding-left: 27px;
+        }
+      }
+    }
+    .credits {
+      padding-bottom: 15%;
+      padding-top: 10%;
+      a {
+        text-decoration: none;
+      }
+
+      h4 {
+        font-size: 8px;
+        color: @body-bg;
+        margin-bottom: 8px;
+        margin-top: 0;
+      }
+    }
+  }
+  @media (min-width: @screen-lg-desktop) {
+    .map-info-content {
+      padding-top: 4%;
+      padding-left: 4%;
+      padding-right: 8%;
+      padding-bottom: 0;
+    }
+  }
+  @media (min-width: @screen-desktop) and (max-width: @screen-lg-desktop) {
+    .map-info-content {
+      padding-top: 4%;
+
+      .schedule-info {
+        padding-top: 10%;
+        padding-bottom: 10%;
+        padding-right: 20%;
+      }
+    }
+  }
+  @media (min-width: @screen-tablet) and (max-width: @screen-desktop) {
+    .map-container {
+      width: percentage(1 / 2);
+    }
+    .map-info-content {
+      width: percentage(1 / 2);
+      padding-top: 3%;
+
+      .schedule-info {
+        padding-top: 10%;
+        padding-bottom: 10%;
+        padding-right: 10%;
+      }
+    }
+  }
+  @media (min-width: 900px) and (max-width: 992px) {
+    .map-container {
+      width: percentage(3 / 5);
+    }
+    .map-info-content {
+      width: percentage(2 / 5);
+
+      .map-info-logo {
+        padding-bottom: 10%;
+      }
+      p {
+        font-size: 14px;
+        line-height: 1.2;
+      }
+      h5 {
+        font-size: 14px;
+        line-height: 1.2;
+        padding-top: 10%;
+      }
+      h6 {
+        font-size: 14px;
+        line-height: 1.2;
+      }
+
+      .schedule-info {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-right: 20%;
+
+        .closed {
+          margin-right: -14px;
+        }
+        li {
+          font-size: 14px;
+          line-height: 1.2;
+        }
+      }
+    }
+  }
+  @media (min-width: 770px) and (max-width: 900px) {
+    .map-container {
+      width: percentage(3 / 5);
+    }
+    .map-info-content {
+      width: percentage(2 / 5);
+      padding-right: 5%;
+
+      .map-info-logo {
+        padding-bottom: 10%;
+      }
+      p {
+        font-size: 12px;
+        line-height: 1.2;
+      }
+      h5 {
+        font-size: 12px;
+        line-height: 1.2;
+        padding-top: 10%;
+      }
+      h6 {
+        font-size: 12px;
+        line-height: 1.2;
+      }
+
+      .schedule-info {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-right: 20%;
+
+        .closed {
+          margin-right: -14px;
+        }
+        li {
+          font-size: 12px;
+          line-height: 1.2;
+        }
+      }
+    }
+  }
+  @media (max-width: @grid-float-breakpoint) {
+    .map-container {
+      width: percentage(1 / 2);
+    }
+    .map-info-content {
+      width: percentage(1 / 2);
+      padding-top: 6%;
+      padding-right: 4%;
+
+      .map-info-logo {
+        padding-bottom: 10%;
+      }
+      p {
+        font-size: 9px;
+        line-height: 1.2;
+      }
+      h5 {
+        font-size: 9px;
+        line-height: 1.2;
+        padding-top: 10%;
+      }
+      h6 {
+        font-size: 9px;
+        line-height: 1.2;
+      }
+
+      .schedule-info {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-right: 20%;
+
+        .closed {
+          margin-right: -9px;
+        }
+        li {
+          font-size: 9px;
+          line-height: 1.2;
+        }
+      }
+      .share-buttons {
+        a {
+          .social-button {
+            height: 16px;
+            padding-left: 5px;
+          }
+          .social-button-1 {
+            padding-left: 14px;
+          }
+        }
+      }
+      .credits {
+        padding-bottom: 5%;
+        padding-top: 5%;
+
+        h4 {
+          font-size: 5px;
+          margin-bottom: 3px;
+        }
+      }
+    }
+  }
+  @media (min-width: 540px) and (max-width: 769px) {
+    .map-container {
+      width: percentage(3 / 5);
+    }
+    .map-info-content {
+      width: percentage(2 / 5);
+      padding-right: 8%;
+    }
+  }
+  @media (min-width: 514px) and (max-width: 539px) {
+    .map-container {
+      width: percentage(3 / 5);
+    }
+    .map-info-content {
+      width: percentage(2 / 5);
+      padding-right: 6%;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

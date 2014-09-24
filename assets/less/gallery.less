@@ -1,0 +1,234 @@
+// Gallery
+
+.gallery-container-info {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding-left: 80px;
+  padding-right: 90px;
+  height: 85%;
+  padding-top: 170px;
+
+  .gallery-container {
+    position: relative;
+    min-height: 1px;
+    float: left;
+    width: percentage(6 / 9);
+    height: 100%;
+    padding-right: 15px;
+
+    .container-gallery-scroll {
+      height: 100%;
+      width: 100%;
+      background-image: url('/assets/img/gallery/gallery_1_big.jpg');
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      img {
+        width: 100%;
+        padding-right: 16px;
+      }
+    }
+    .control-right {
+      position: absolute;
+      bottom: -54px;
+      right: 17px;
+      height: 34px;
+      width: 42px;
+    }
+    .control-left {
+      position: absolute;
+      bottom: -54px;
+      left: 0;
+      height: 34px;
+      width: 42px;
+    }
+  }
+  .gallery-index-container {
+    position: relative;
+    min-height: 1px;
+    float: left;
+    width: percentage(3 / 9);
+    height: 100%;
+
+    .container-gallery-index-scroll {
+      overflow-y: scroll;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      height: 100%;
+
+      .gallery-index {
+        position: relative;
+        min-height: 1px;
+        float: left;
+        width: percentage(1 / 3);
+        img {
+          width: 100%;
+          padding-right: 10px;
+          padding-bottom: 10px;
+        }
+      }
+    }
+  }
+  @media (min-width: @screen-lg-desktop){
+    padding-top: 180px;
+  }
+  @media (min-width: @screen-desktop) and (max-width: @screen-lg-desktop) {
+    padding-left: 60px;
+    padding-right: 50px;
+    padding-top: 180px;
+  }
+  @media (min-width: @screen-tablet) and (max-width: @screen-desktop) {
+    padding-left: 30px;
+    padding-right: 20px;
+    padding-top: 150px;
+
+    .gallery-container {
+      width: percentage(6 / 9);
+
+      img {
+        padding-right: 0;
+      }
+      .control-right {
+        bottom: -40px;
+        height: 24px;
+        width: 32px;
+      }
+      .control-left {
+        bottom: -40px;
+        height: 24px;
+        width: 32px;
+      }
+    }
+    .gallery-index-container {
+      width: percentage(3 / 9);
+      padding-top: 0;
+      .container-gallery-index-scroll {
+        .gallery-index {
+          width: percentage(1 / 3);
+        }
+      }
+    }
+  }
+  @media (min-width: @screen-phone) and (max-width: @screen-tablet) {
+    padding-left: 30px;
+    padding-right: 15px;
+    padding-top: 150px;
+    height: 95%;
+
+    .gallery-container {
+      width: percentage(9 / 9);
+
+      img {
+        padding-right: 15px;
+      }
+      .control-right {
+        bottom: -40px;
+        height: 24px;
+        width: 32px;
+      }
+      .control-left {
+        bottom: -40px;
+        height: 24px;
+        width: 32px;
+      }
+    }
+    .gallery-index-container {
+      width: percentage(5 / 5);
+      padding-top: 0;
+
+      .container-gallery-index-scroll {
+        .gallery-index {
+          width: percentage(1 / 5);
+            img {
+              width: 100%;
+              padding-right: 15px;
+              padding-bottom: 15px;
+            }
+        }
+      }
+    }
+  }
+  @media (max-width: @screen-phone) {
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-top: 144px;
+    height: 95%;
+
+    .gallery-container {
+      width: percentage(9 / 9);
+
+      img {
+        padding-right: 10px;
+      }
+      .control-right {
+        bottom: -40px;
+        height: 24px;
+        width: 32px;
+      }
+      .control-left {
+        bottom: -40px;
+        height: 24px;
+        width: 32px;
+      }
+    }
+    .gallery-index-container {
+      width: percentage(3 / 3);
+      padding-top: 0;
+
+      .container-gallery-index-scroll {
+        .gallery-index {
+          width: percentage(1 / 3);
+        }
+      }
+    }
+  }
+  @media (max-width: @grid-float-breakpoint) {
+    #modalGallery .modal-body {
+      padding: 10px;
+    }
+    .gallery-control-right {
+      position: absolute;
+      top: 47%;
+      right: 15px;
+      img {
+        width: 35px;
+      }
+    }
+    .gallery-control-left {
+      position: absolute;
+      top: 47%;
+      left: 15px;
+      img {
+        width: 35px;
+      }
+    }
+  }
+  @media (max-width: @screen-phone) {
+    .gallery-control-right {
+      img {
+        width: 25px;
+      }
+    }
+    .gallery-control-left {
+      img {
+        width: 25px;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
