@@ -1,0 +1,40 @@
+// Error
+
+.error-container{
+  background-color: @brand-danger;
+  height: 636px;
+  padding-top: 180px;
+  text-align: center;
+
+  .error-header {
+    background-color: @navbar-default-bg;
+    padding: 50px;
+    color: @text-color;
+
+    h3 {
+      font-size: 28px;
+      font-weight: @font-light;
+      padding: 30px;
+      color: @text-color;
+    }
+    span {
+      font-weight: @font-bold;
+      color: @text-color;
+      .text-uppercase();
+    }
+  }
+  @media (max-width: @grid-float-breakpoint) {
+    height: 430px;
+    padding-top: 60px;
+    .error-header {
+      padding: 40px;
+
+      h3 {
+        font-size: 18px;
+        padding: 20px;
+      }
+    }
+  }
+}
+
+

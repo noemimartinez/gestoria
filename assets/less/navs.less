@@ -1,0 +1,151 @@
+// Pills
+// -------------------------
+.nav-pills {
+  > li {
+
+    // Links rendered as pills
+    > a {
+      display: block;
+    }
+    + li {
+      margin-left: 0px;
+
+    }
+
+    // Active state
+    &.active > a {
+      background-color: @navbar-inverse-bg;
+    }
+  }
+}
+.nav > li.active > a{
+  background: @nav-link-hover-bg;
+  color: @navbar-inverse-bg;
+}
+
+// Stacked pills
+.nav-stacked {
+  > li {
+    background-color: @navbar-inverse-bg;
+    a {
+      color: @headings-color;
+      &:hover, &:active {
+        color: @navbar-inverse-bg;
+      }
+      > i {
+        width: 20px;
+      }
+    }
+    + li {
+      margin-top: 0px;
+      background-color: @navbar-inverse-bg;
+      border: 1px solid @btn-default-border;
+      border-bottom: none;
+      border-right: none;
+      border-left: none;
+    }
+    &:first-child {
+      text-align: center;
+      > a > span {
+        color: @gray-light;
+        font-size: 13px;
+      }
+      .sidebar-dropdown-menu {
+        > li > a {
+          padding-left: 0;
+        }
+      }
+    }
+    &:last-child {
+      border: 1px solid @btn-default-border;
+      border-left: none;
+      border-right: none;
+    }
+  }
+}
+
+.sidebar-dropdown {
+
+  .dropdown-black {
+    display: none;
+  }
+  .sidebar-dropdown-toggle {
+    img {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+    }
+    &:hover {
+      .dropdown-black {
+        display: block;
+      }
+      .dropdown-white {
+        display: none;
+      }
+    }
+  }
+  .sidebar-dropdown-menu {
+    display: none;
+    padding-left: 0;
+    list-style-type: none;
+    > li {
+      > a {
+        background-color: @white;
+        border: 1px solid @gray-lighter;
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+        display: block;
+        list-style: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: @navbar-inverse-bg;
+        padding-left: 48px;
+        text-decoration: none;
+
+        &:hover {
+          background-color: darken(@gray-lighter, 5%);
+        }
+      }
+    }
+    li.active > a{
+      background-color: lighten(@gray-light, 15%);
+      &:hover {
+        background-color: lighten(@gray-light, 15%);
+      }
+    }
+  }
+}
+
+
+.sidebar-dropdown.open {
+  > .sidebar-dropdown-menu {
+    display: block;
+  }
+  .dropdown-black {
+    display: block;
+  }
+  .dropdown-white {
+    display: none;
+  }
+}
+
+.nav .open > a {
+  color: @navbar-inverse-bg;
+}
+
+.sidebar-menu {
+  background: @navbar-inverse-bg;
+  display: inline-block;
+  min-height: 100%;
+  position: absolute;
+  width: @sidebar-size;
+}
+
+.sidebar-menu-shows {
+  min-height: 200px;
+}
+
+
+
+

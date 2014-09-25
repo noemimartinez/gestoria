@@ -4,12 +4,40 @@ body {
   background: @body-bg;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: @homestories-gray;
-  font-weight: 500;
-  letter-spacing: 1px;
+  height: 100%;
 }
 
 .content-wrapper {
   background: @content-bg;
-  padding: 0 0 0;
+  padding: 0;
+  min-height: 100%;
+}
+.content-wrapper-shows {
+  min-height: 461px;
+}
+.panel-body-shows {
+  height: 501px;
+}
+.sidebar-menu-shows {
+  min-height: 67%;
+}
+.content {
+  margin-left: 0;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+}
+.content.sidebar-margin {
+  margin-left: @sidebar-size;
+  @media (max-width: @screen-tablet) {
+    margin-right: -@sidebar-size;
+  }
+}
+
+a {
+  &:hover {
+    .transition();
+  }
 }

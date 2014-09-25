@@ -1,17 +1,65 @@
+// Text uppercase - Texto en mayusculas
 .text-uppercase {
-	text-transform: uppercase;
+  text-transform: uppercase;
 }
 
+// Hide element - Esconder elemento
 .d-none {
   display: none;
 }
 
-.border-radius(@border-radius) {
-	border-radius: @border-radius;
+// Override content-box in Normalize (* isn't specific enough)
+.box-sizing(border-box) {
+  border: none;
 }
 
-a:focus {
-  outline: none;
-  outline-offset: 0;
+// Button variants
+// -------------------------
+// Easily pump out default styles, as well as :hover, :focus, :active,
+// and disabled options for all buttons
+.button-variant-lighten(@color; @background; @border) {
+  color: @color;
+  background-color: @background;
+  border-color: @border;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active,
+  .open .dropdown-toggle& {
+    color: @color;
+    background-color: darken(@background, 3%);
+        border-color: darken(@border, 3%);
+  }
+  &:active,
+  &.active,
+  .open .dropdown-toggle& {
+    background-image: none;
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      background-color: @background;
+          border-color: @border;
+    }
+  }
 }
+
+.transition {
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+}
+
+
+
+
+
 

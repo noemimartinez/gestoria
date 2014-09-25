@@ -1,0 +1,72 @@
+//
+// Dropdowns
+// --------------------------------------------------
+
+
+.dropdown-toggle {
+  text-align: center;
+  img {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+}
+.btn-group {
+  .dropdown-toggle {
+    padding-right: 28px;
+  }
+}
+
+.btn-group.open .dropdown-toggle {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.open .dropdown-toggle.btn-default {
+  background-color: @btn-default-color;
+  border-color: @btn-default-border;
+}
+.open .dropdown-toggle.btn-default-table {
+  background-color: @btn-default-color;
+  border-color: @btn-default-border;
+  color: @text-color;
+}
+.open .dropdown-toggle.btn-primary {
+  background-color: @btn-primary-hover;
+  border-color: @btn-primary-border;
+}
+.open .dropdown-toggle.btn-success {
+  background-color: @btn-success-hover;
+  border-color: @btn-success-border;
+}
+.open .dropdown-toggle.btn-info {
+  background-color: @btn-info-hover;
+  border-color: @btn-info-border;
+}
+
+.open .dropdown-toggle.btn-warning {
+  background-color: @btn-warning-hover;
+  border-color: @btn-warning-border;
+}
+.open .dropdown-toggle.btn-danger {
+  background-color: @btn-danger-hover;
+  border-color: @btn-danger-border;
+}
+
+.dropdown-menu {
+  border: none;
+  margin: 0;
+  padding: 0;
+
+  li > a {
+    padding: 8px 20px;
+
+    &:hover{
+      background-color: lighten(@gray-dark, 70%); 
+    }
+  }
+  .divider {
+    margin: 0;
+    background-color: @gray-lighter;
+  }
+}

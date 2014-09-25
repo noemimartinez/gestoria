@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author"   content="Waavi Studio">
-    <title>HomeStories</title>
+    <title>GESTORYA</title>
     <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="/assets/css/homestories.css">
+    <link rel="stylesheet" type="text/css" href="/css/gestorya.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="//use.typekit.net/klh0kvy.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -17,323 +20,20 @@
   <body>
     <div class="content-wrapper">
       <div class="content">
-        <!-- INDEX CONTAINER -->
-        <div id="indexContainer">
-          <div class="homestories-container homestories-index">
-            <a href="#" class="go-home-link">
-              <div class="brand-homestories">
-                <img src="/assets/img/logo-homestories.png">
-                <h3>Home furnishing and design</h3>
-              </div>
-              <div class="homestories-index-img homestories-img-index-1"></div>
-              <div class="homestories-index-img homestories-img-index-2 d-none"></div>
-              <div class="homestories-index-img homestories-img-index-3 d-none"></div>
-              <div class="homestories-index-img homestories-img-index-4 d-none"></div>
-              <h3 class="address-index">148 Montague Street<span>Brooklyn Heights</span>New York</h3>
-            </a>
+        <nav class="navbar" role="navigation">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <a class="navbar-brand sidebar-button" href="#" data-url="#">GESTOR<span>YA</span><img src="/assets/img/favicon.png"></a>
           </div>
-        </div>
-        <!-- END INDEX CONTAINER -->
-        <!-- HOMESTORIES WEB CONTAINER -->
-        <div id="homestoriesContainer" class="d-none">
-          <div id="homeContainer" class="homestories-container">
-            <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-              <div class="navbar-header">
-                <a id="logoHomestories" class="navbar-brand" href="#"><img src="/assets/img/logo-homestories.png" class="brand-img"></a>
-              </div>
-              <ul class="nav navbar-nav navbar-right">
-                <li><a href="#" class="menu-link" data-target=".homestories-container-about">About</a></li>
-                <li><a href="#" class="menu-link" data-target=".homestories-container-gallery">Gallery</a></li>
-                <li><a href="#" class="menu-link" data-target=".homestories-container-press">Press</a></li>
-                <li><a href="#" class="go-info-link">Info</a></li>
-              </ul>
-            </div>
-            <!-- HOME CONTAINER -->
-            <div class="home-container homestories-container-home active">
-            </div>
-            <!-- END HOME CONTAINER -->
-            <!-- ABOUT CONTAINER -->
-            <div class="home-container homestories-container-about">
-              <div class="about-container-info">
-                <div class="about-container">
-                  <div class="about-info">
-                    <div class="container-about-scroll">
-                      <p>Celebrating the Well-Curated Life</p>
-                      <p>Paul and Sophie Yanacoupoulos-Gross are introducing their first US home furnishings store in Brooklyn Heights.</p>
-                      <p>The carefully curated collections that Paul and Sophie offer mix muted tones and natural materials in designed objects sourced from throughout the world. </p>
-                      <p>The collections include beds, tables and benches in a full range of sizes, upholstered seating, chairs and  lighting, rugs, basketry, bed linens, cushions,  crockery, and glassware.</p>
-                      <p>Paul and Sophie’s very special style is reflected in every aspect of one of New York’s most exciting new home furnishings stores.</p>
-                    </div>
-                    <a href="#" class="scroll-arrow d-none" data-target=".container-about-scroll">
-                      <img src="/assets/img/img-down.png">
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- END ABOUT CONTAINER -->
-            <!-- GALLERY CONTAINER -->
-            <div class="home-container homestories-container-gallery">
-              <div class="gallery-container-info">
-                <div class="gallery-container hidden-xs">
-                  <div id="galleryImage" class="container-gallery-scroll">
-                    <!-- <img src="/assets/img/gallery/gallery_img1.jpg"> -->
-                  </div>
-                  <a href="#" class="gallery-control-right">
-                    <img src="/assets/img/img-right.png" class="control-right">
-                  </a>
-                  <a href="#" class="gallery-control-left d-none">
-                    <img src="/assets/img/img-left.png" class="control-left">
-                  </a>
-                </div>
-                <div class="modal fade" id="modalGallery" tabindex="-1" role="dialog" aria-labelledby="modalGalleryLabel" aria-hidden="false">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-body">
-                        <img src="/assets/img/gallery/gallery_1_big.jpg" class="img-responsive">
-                        <a href="#" class="gallery-control-right">
-                          <img src="/assets/img/img-right-phone.png" class="control-right">
-                        </a>
-                        <a href="#" class="gallery-control-left d-none">
-                          <img src="/assets/img/img-left-phone.png" class="control-left">
-                        </a>
-                      </div>
-                    </div><!-- /.modal-content -->
-                  </div><!-- /.modal-dialog -->
-                </div>
-                <div class="gallery-index-container">
-                  <div class="container-gallery-index-scroll">
-                    <a href="#" class="gallery-link active" data-target="#galleryImage" data-image="/assets/img/gallery/gallery_1_big.jpg">
-                      <div class="gallery-index">
-                        <img src="/assets/img/gallery/gallery_1_small.jpg">
-                      </div>
-                    </a>
-                    <a href="#" class="gallery-link" data-target="#galleryImage" data-image="/assets/img/gallery/gallery_2_big.jpg">
-                      <div class="gallery-index">
-                        <img src="/assets/img/gallery/gallery_2_small.jpg">
-                      </div>
-                    </a>
-                    <a href="#" class="gallery-link" data-target="#galleryImage" data-image="/assets/img/gallery/gallery_3_big.jpg">
-                      <div class="gallery-index">
-                        <img src="/assets/img/gallery/gallery_3_small.jpg">
-                      </div>
-                    </a>
-                    <a href="#" class="gallery-link" data-target="#galleryImage" data-image="/assets/img/gallery/gallery_4_big.jpg">
-                      <div class="gallery-index">
-                        <img src="/assets/img/gallery/gallery_4_small.jpg">
-                      </div>
-                    </a>
-                    <a href="#" class="gallery-link" data-target="#galleryImage" data-image="/assets/img/gallery/gallery_5_big.jpg">
-                      <div class="gallery-index">
-                        <img src="/assets/img/gallery/gallery_5_small.jpg">
-                      </div>
-                    </a>
-                    <a href="#" class="gallery-link" data-target="#galleryImage" data-image="/assets/img/gallery/gallery_6_big.jpg">
-                      <div class="gallery-index">
-                        <img src="/assets/img/gallery/gallery_6_small.jpg">
-                      </div>
-                    </a>
-                    <a href="#" class="gallery-link" data-target="#galleryImage" data-image="/assets/img/gallery/gallery_7_big.jpg">
-                      <div class="gallery-index">
-                        <img src="/assets/img/gallery/gallery_7_small.jpg">
-                      </div>
-                    </a>
-                    <a href="#" class="gallery-link" data-target="#galleryImage" data-image="/assets/img/gallery/gallery_8_big.jpg">
-                      <div class="gallery-index">
-                        <img src="/assets/img/gallery/gallery_8_small.jpg">
-                      </div>
-                    </a>
-                    <a href="#" class="gallery-link" data-target="#galleryImage" data-image="/assets/img/gallery/gallery_9_big.jpg">
-                      <div class="gallery-index">
-                        <img src="/assets/img/gallery/gallery_9_small.jpg">
-                      </div>
-                    </a>
-                    <a href="#" class="gallery-link" data-target="#galleryImage" data-image="/assets/img/gallery/gallery_10_big.jpg">
-                      <div class="gallery-index">
-                        <img src="/assets/img/gallery/gallery_10_small.jpg">
-                      </div>
-                    </a>
-                    <a href="#" class="gallery-link" data-target="#galleryImage" data-image="/assets/img/gallery/gallery_11_big.jpg">
-                      <div class="gallery-index">
-                        <img src="/assets/img/gallery/gallery_11_small.jpg">
-                      </div>
-                    </a>
-                    <a href="#" class="gallery-link" data-target="#galleryImage" data-image="/assets/img/gallery/gallery_13_big.jpg">
-                      <div class="gallery-index">
-                        <img src="/assets/img/gallery/gallery_13_small.jpg">
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- END GALLERY CONTAINER -->
-            <!-- PRESS CONTAINER -->
-            <div class="home-container homestories-container-press">
-              <div class="press-container-info">
-                <div class="press-container hidden-xs">
-                  <div class="container-press-scroll">
-                    <img id="pressImage" src="/assets/img/press/nytimes.jpeg">
-                  </div>
-                  <a href="#" class="press-control-right">
-                    <img src="/assets/img/img-right.png" class="control-right">
-                  </a>
-                  <a href="#" class="press-control-left d-none">
-                    <img src="/assets/img/img-left.png" class="control-left">
-                  </a>
-                </div>
-                <div class="modal fade" id="modalPress" tabindex="-1" role="dialog" aria-labelledby="modalPressLabel" aria-hidden="false">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-body">
-                        <img id="pressImageModal" src="/assets/img/press/nytimes.jpeg" class="img-responsive">
-                        <a href="#" class="press-control-right">
-                          <img src="/assets/img/img-right-phone.png" class="control-right">
-                        </a>
-                        <a href="#" class="press-control-left d-none">
-                          <img src="/assets/img/img-left-phone.png" class="control-left">
-                        </a>
-                      </div>
-                    </div><!-- /.modal-content -->
-                  </div><!-- /.modal-dialog -->
-                </div>
-                <div class="press-index-container">
-                  <p>Paul and Sophie have appeared in:</p>
-                  <div class="container-press-index-scroll">
-                    <a href="#" class="press-link active" data-target="#pressImage" data-image="/assets/img/press/nytimes.jpeg">
-                      <div class="press-index">
-                        <img src="/assets/img/press/nytimes_small.jpeg">
-                      </div>
-                    </a>
-                    <a href="#" class="press-link" data-target="#pressImage" data-image="/assets/img/press/press_res_deco_1.jpg">
-                      <div class="press-index">
-                        <img src="/assets/img/press/press_res_deco_1_small.jpeg">
-                      </div>
-                    </a>
-                    <a href="#" class="press-link d-none" data-target="#pressImage" data-image="/assets/img/press/press_res_deco_2.jpg"></a>
-                    <a href="#" class="press-link d-none" data-target="#pressImage" data-image="/assets/img/press/press_res_deco_3.jpg"></a>
-                    <a href="#" class="press-link" data-target="#pressImage" data-image="/assets/img/press/press_eig_1.jpeg">
-                      <div class="press-index">
-                        <img src="/assets/img/press/press_eig_1_small.jpeg">
-                      </div>
-                    </a>
-                    <a href="#" class="press-link d-none" data-target="#pressImage" data-image="/assets/img/press/press_eig_2.jpeg"></a>
-                    <a href="#" class="press-link d-none" data-target="#pressImage" data-image="/assets/img/press/press_eig_3.jpeg"></a>
-                    <a href="#" class="press-link d-none" data-target="#pressImage" data-image="/assets/img/press/press_eig_4.jpeg"></a>
-                    <a href="#" class="press-link d-none" data-target="#pressImage" data-image="/assets/img/press/press_eig_5.jpeg"></a>
-                    <a href="#" class="press-link d-none" data-target="#pressImage" data-image="/assets/img/press/press_eig_6.jpeg"></a>
-                    <a href="#" class="press-link d-none" data-target="#pressImage" data-image="/assets/img/press/press_eig_7.jpeg"></a>
-                    <a href="#" class="press-link d-none" data-target="#pressImage" data-image="/assets/img/press/press_eig_8.jpeg"></a>
-                    <a href="#" class="press-link d-none" data-target="#pressImage" data-image="/assets/img/press/press_eig_9.jpeg"></a>
-                    <a href="#" class="press-link d-none" data-target="#pressImage" data-image="/assets/img/press/press_eig_10.jpeg"></a>
-                    <a href="#" class="press-link" data-target="#pressImage" data-image="/assets/img/press/press_mamag_1.jpeg">
-                      <div class="press-index">
-                        <img src="/assets/img/press/press_mamag_1_small.jpeg">
-                      </div>
-                    </a>
-                    <a href="#" class="press-link d-none" data-target="#pressImage" data-image="/assets/img/press/press_mamag_2.jpeg"></a>
-                    <a href="#" class="press-link d-none" data-target="#pressImage" data-image="/assets/img/press/press_mamag_3.jpeg"></a>
-                    <a href="#" class="press-link d-none" data-target="#pressImage" data-image="/assets/img/press/press_mamag_4.jpeg"></a>
-                    <a href="#" class="press-link d-none" data-target="#pressImage" data-image="/assets/img/press/press_mamag_5.jpeg"></a>
-                    <a href="#" class="press-link d-none" data-target="#pressImage" data-image="/assets/img/press/press_mamag_6.jpeg"></a>
-                    <a href="#" class="press-link d-none" data-target="#pressImage" data-image="/assets/img/press/press_mamag_7.jpeg"></a>
-                    <a href="#" class="press-link d-none" data-target="#pressImage" data-image="/assets/img/press/press_mamag_8.jpeg"></a>
-                    <a href="#" class="press-link d-none" data-target="#pressImage" data-image="/assets/img/press/press_mamag_9.jpeg"></a>
-                    <a href="#" class="press-link" data-target="#pressImage" data-image="/assets/img/press/press_elle_1.jpeg">
-                      <div class="press-index">
-                        <img src="/assets/img/press/press_elle_1_small.jpeg">
-                      </div>
-                    </a>
-                    <a href="#" class="press-link d-none" data-target="#pressImage" data-image="/assets/img/press/press_elle_2.jpeg"></a>
-                    <a href="#" class="press-link d-none" data-target="#pressImage" data-image="/assets/img/press/press_elle_3.jpeg"></a>
-                    <a href="#" class="press-link d-none" data-target="#pressImage" data-image="/assets/img/press/press_elle_4.jpeg"></a>
-                    <a href="#" class="press-link d-none" data-target="#pressImage" data-image="/assets/img/press/press_elle_5.jpeg"></a>
-                    <a href="#" class="press-link d-none" data-target="#pressImage" data-image="/assets/img/press/press_elle_6.jpeg"></a>
-                    <a href="#" class="press-link d-none" data-target="#pressImage" data-image="/assets/img/press/press_elle_7.jpeg"></a>
-                    <a href="#" class="press-link d-none" data-target="#pressImage" data-image="/assets/img/press/press_elle_8.jpeg"></a>
-                    <a href="#" class="press-link d-none" data-target="#pressImage" data-image="/assets/img/press/press_elle_9.jpeg"></a>
-                    <a href="#" class="press-link" data-target="#pressImage" data-image="/assets/img/press/press_annabelle_1.jpg">
-                      <div class="press-index">
-                        <img src="/assets/img/press/press_annabelle_1_small.jpg">
-                      </div>
-                    </a>
-                    <a href="#" class="press-link d-none" data-target="#pressImage" data-image="/assets/img/press/press_annabelle_2.jpg"></a>
-                    <a href="#" class="press-link d-none" data-target="#pressImage" data-image="/assets/img/press/press_annabelle_3.jpg"></a>
-                    <a href="#" class="press-link d-none" data-target="#pressImage" data-image="/assets/img/press/press_annabelle_4.jpg"></a>
-                    <a href="#" class="press-link d-none" data-target="#pressImage" data-image="/assets/img/press/press_annabelle_5.jpg"></a>
-                    <a href="#" class="press-link d-none" data-target="#pressImage" data-image="/assets/img/press/press_annabelle_6.jpg"></a>
-                    <a href="#" class="press-link d-none" data-target="#pressImage" data-image="/assets/img/press/press_annabelle_7.jpg"></a>
-                    <a href="#" class="press-link" data-target="#pressImage" data-image="/assets/img/press/press_raum_0.jpeg">
-                      <div class="press-index">
-                        <img src="/assets/img/press/press_raum_0_small.jpeg">
-                      </div>
-                    </a>
-                    <a href="#" class="press-link d-none" data-target="#pressImage" data-image="/assets/img/press/press_raum_1.jpeg"></a>
-                    <a href="#" class="press-link d-none" data-target="#pressImage" data-image="/assets/img/press/press_raum_2.jpeg"></a>
-                    <a href="#" class="press-link d-none" data-target="#pressImage" data-image="/assets/img/press/press_raum_3.jpeg"></a>
-                    <a href="#" class="press-link d-none" data-target="#pressImage" data-image="/assets/img/press/press_raum_4.jpeg"></a>
-                    <a href="#" class="press-link d-none" data-target="#pressImage" data-image="/assets/img/press/press_raum_5.jpeg"></a>
-                    <a href="#" class="press-link d-none" data-target="#pressImage" data-image="/assets/img/press/press_raum_6.jpeg"></a>
-                    <a href="#" class="press-link d-none" data-target="#pressImage" data-image="/assets/img/press/press_raum_7.jpeg"></a>
-                    <a href="#" class="press-link d-none" data-target="#pressImage" data-image="/assets/img/press/press_raum_8.jpeg"></a>
-                    <a href="#" class="press-link d-none" data-target="#pressImage" data-image="/assets/img/press/press_raum_9.jpeg"></a>
-                    <a href="#" class="press-link" data-target="#pressImage" data-image="/assets/img/press/press_mok_1.jpeg">
-                      <div class="press-index">
-                        <img src="/assets/img/press/press_mok_1_small.jpeg">
-                      </div>
-                    </a>
-                    <a href="#" class="press-link d-none" data-target="#pressImage" data-image="/assets/img/press/press_mok_2.jpeg"></a>
-                    <a href="#" class="press-link d-none" data-target="#pressImage" data-image="/assets/img/press/press_mok_3.jpeg"></a>
-                    <a href="#" class="press-link d-none" data-target="#pressImage" data-image="/assets/img/press/press_mok_4.jpeg"></a>
-                    <a href="#" class="press-link d-none" data-target="#pressImage" data-image="/assets/img/press/press_mok_5.jpeg"></a>
-                    <a href="#" class="press-link d-none" data-target="#pressImage" data-image="/assets/img/press/press_mok_6.jpeg"></a>
-                    <a href="#" class="press-link d-none" data-target="#pressImage" data-image="/assets/img/press/press_mok_7.jpeg"></a>
-                    <a href="#" class="press-link d-none" data-target="#pressImage" data-image="/assets/img/press/press_mok_8.jpeg"></a>
-                    <a href="#" class="press-link d-none" data-target="#pressImage" data-image="/assets/img/press/press_mok_9.jpeg"></a>
-                    <a href="#" class="press-link d-none" data-target="#pressImage" data-image="/assets/img/press/press_mok_10.jpeg"></a>
-                    <a href="#" class="press-link d-none" data-target="#pressImage" data-image="/assets/img/press/press_mok_11.jpeg"></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- END PRESS CONTAINER -->
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#"><img src="/assets/img/icons/icon12.png"></a></li>
+              <li><a href="#"><img src="/assets/img/icons/icon4.png"></a></li>
+              <li><a href="#"><img src="/assets/img/icons/icon14.png"></a></li>
+            </ul>
           </div>
-        </div>
-        <!-- END HOMESTORIES WEB CONTAINER -->
-        <!-- HOMESTORIES INFO/MAP CONTAINER -->
-        <div id="infoContainer">
-          <div class="homestories-container map-info-container">
-            <div id="map" class="map-container"></div>
-            <div class="map-info-content">
-              <div class="container-map-info-scroll">
-                <a href="#" class="go-home-info-link"><img src="/assets/img/logo-homestories.png" alt="HomeStories" class="map-info-logo"></a>
-                <p>148 Montague Street, parlor floor between Clinton and Henry Streets Brooklyn, New York 11201</p>
-                <p>T +01 718 855 7575</p>
-                <p>info@homestories.com</p>
-                <h5>SUBWAY:</h5>
-                <h6>2/3/4/5 trains to Borough Hall</h6>
-                <h6>A/C/E/F to Jay Street/MetroTech</h6>
-                <ul class="list-unstyled schedule-info">
-                  <li>HOURS</li>
-                  <li>Tuesday <span>11–7</span></li>
-                  <li>Wednesday <span>11–7</span></li>
-                  <li>Thursday <span>11–7</span></li>
-                  <li>Friday <span>11–7</span></li>
-                  <li>Saturday <span>10–6</span></li>
-                  <li>Sunday <span>12–5</span></li>
-                  <li>Monday <span class="closed">closed</span></li>
-                </ul>
-                <p class="share-buttons">Follow us! <a href="http://www.pinterest.com/homestoriesny/"><img src="/assets/img/pinterest.png" class="social-button social-button-1"></a><a href="http://instagram.com/paulshomestories"><img src="/assets/img/instagram.png" class="social-button"></a></p>
-                <div class="credits">
-                  <a href="http://www.mgmtdesign.com/"><h4>SITE DESIGN: MGMT. design</h4></a>
-                  <a href="http://www.waavi.com/"><h4>SITE DEVELOPMENT: WAAVI</h4></a>
-                  <h4>PHOTOGRAPHY: Pascal Periche</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- END HOMESTORIES INFO/MAP CONTAINER -->
+        </nav>
       </div>
     </div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
@@ -341,11 +41,6 @@
     <script src="//maps.google.com/maps/api/js?sensor=false&amp;region=US&amp;language=en'"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <script src="/assets/js/map.min.js"></script>
-    <script src="/assets/js/homestories.min.js"></script>
-    <script src="/assets/js/home.min.js"></script>
-    <script src="/assets/js/gallery.min.js"></script>
-    <script src="/assets/js/press.min.js"></script>
   </body>
   <!-- Website developed by Waavi Studio http://waavi.com  -->
 </html>

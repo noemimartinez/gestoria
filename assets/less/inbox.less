@@ -1,0 +1,125 @@
+//
+// Inbox
+// --------------------------------------------------
+
+.container-inbox {
+
+  .panel-heading-inbox {
+    height: 72px;
+    .panel-title {
+      padding-top: 10px;
+    }
+    .container-panel-inbox {
+      padding-top: 10px;
+      a {
+        padding: 10px;
+        &:hover {
+          color: @white;
+        }
+      }
+    }
+    .container-search-inbox {
+      .input-group {
+        span {
+          button {
+            border-right: none;
+          }
+        }
+        input {
+          background-color: @text-color;
+          border-left: none;
+        }
+      }
+    }
+  }
+  .panel-body {
+    .list-group {
+      li {
+        padding: 0;
+        a {
+          padding: 10px 15px;
+          text-decoration: none;
+          i {
+            width: 30px;
+          }
+          &:hover {
+            background-color: lighten(@body-bg, 2%);
+          }
+        }
+        .tag-1 {
+          color: @brand-success;
+        }
+        .tag-2 {
+          color: @brand-info;
+        }
+        .sidebar-dropdown-menu {
+          li > a {
+            padding-left: 50px;
+            border: none;
+            &:hover, &:active {
+              background-color: lighten(@body-bg, 2%);
+            }
+          }
+        }
+      }
+      .active {
+        a {
+          background-color: @brand-primary;
+          color: @white;
+          &:hover {
+            background-color: @brand-primary;
+            color: @white;
+          }
+        }
+      }
+      .btn-warning {
+        color: @white;
+        &:hover, &:active, &:focus {
+          color: @white;
+          background-color: darken(@brand-warning, 5%);
+        }
+      }
+    }
+  }
+  .table-striped {
+    tbody > tr {
+      .checkbox-star {
+        position: relative;
+        a {
+          i {
+            position: absolute;
+            right: 12px;
+            bottom: 12px;
+          }
+          .fa-star {
+            visibility: hidden;
+          }
+          .fa-star-o {
+            visibility: visible;
+          }
+          &:active, &:focus {
+            color: @brand-warning;
+            .fa-star {
+              visibility: visible;
+            }
+          }
+        }
+      }
+      td {
+        a {
+          text-decoration: none;
+          font-weight: @font-bold;
+        }
+      }
+      .time-inbox {
+        text-align: right;
+      }
+    }
+  }
+}
+
+
+
+
+
+

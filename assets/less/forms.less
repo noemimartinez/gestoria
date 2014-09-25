@@ -1,0 +1,286 @@
+//
+// Forms
+// --------------------------------------------------
+
+label {
+  font-weight: @headings-font-weight;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+.input-sm {
+  padding: 0 10px;
+}
+.input-lg {
+  padding: 0 16px;
+}
+
+.input-group:last-child {
+  margin-bottom: 0;
+}
+
+.input-group-lg {
+  .input-group-addon {
+    padding-left: 51px;
+  }
+}
+
+.input-group-sm {
+  .input-group-addon {
+    padding-left: 61px;
+  }
+}
+
+.input-group-addon {
+  font-weight: @headings-font-weight;
+  padding: 0 10px 0 60px;
+}
+
+.form-control {
+  padding-left: 15px;
+  border-radius: 0;
+  width: 100%;
+}
+
+.form-control-validation {
+  background-color: @input-bg-disabled;
+}
+
+
+.well {
+  .form-control {
+    background-color: @white;
+    padding-left: 15px;
+    border-color: @well-bg;
+  }
+  button {
+    border-color: @well-bg;
+    margin-top: 25px;
+  }
+  .btn-group {
+    button, a {
+      border-color: @well-bg;
+      margin-top: 0;
+    }
+  }
+}
+
+input::-webkit-input-placeholder {
+  font-weight: @font-thin;
+}
+
+textarea::-webkit-input-placeholder {
+  font-weight: @font-thin;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+// Warning
+.has-warning {
+  .form-control-validation(@brand-warning; @brand-warning; @brand-warning);
+}
+// Error
+.has-error {
+  .form-control-validation(@brand-danger; @brand-danger; @brand-danger);
+}
+// Success
+.has-success {
+  .form-control-validation(@brand-success; @brand-success; @brand-success);
+}
+
+
+legend {
+  border-bottom: none;
+}
+
+select {
+  border-radius: 0;
+}
+
+
+// Checkbox
+
+.checkbox {
+  padding-left: 0;
+}
+
+.checkbox-align {
+  min-height: 35px;
+}
+
+input[type=checkbox].css-checkbox {
+  display: none;
+}
+
+input[type=checkbox].css-checkbox + label.css-label {
+  padding-left: 28px;
+  height: 20px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  font-size: 14px;
+  line-height: 16px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+input[type=checkbox].css-checkbox:checked + label.css-label {
+  background-position: 0 -16px;
+  color: @text-color;
+}
+input[type=checkbox].css-checkbox:disabled + label.css-label {
+  opacity: 0.5;
+  color: @text-color;
+}
+label.css-label {
+  background-image: url(/assets/img/icons/checkbox.png);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+label.css-label-danger {
+  background-image: url(/assets/img/icons/checkbox_danger.png);
+}
+label.css-label-dark {
+  background-image: url(/assets/img/icons/checkbox_dark.png);
+}
+label.css-label-info {
+  background-image: url(/assets/img/icons/checkbox_info.png);
+}
+label.css-label-success {
+  background-image: url(/assets/img/icons/checkbox_success.png);
+}
+label.css-label-warning {
+  background-image: url(/assets/img/icons/checkbox_warning.png);
+}
+label.css-label-white {
+  background-image: url(/assets/img/icons/checkbox_white.png);
+}
+
+
+
+// Radio
+
+.radio {
+  padding-left: 0;
+}
+.radio-align {
+  padding-top: 10px;
+}
+input[type=radio].css-radio {
+  display: none;
+}
+
+input[type=radio].css-radio + label.css-radio-label {
+  padding-left: 28px;
+  height: 15px;
+  display: inline-block;
+  line-height: 15px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  font-size: 14px;
+  line-height: 16px;
+  vertical-align: middle;
+  cursor: pointer;
+
+}
+
+input[type=radio].css-radio:checked + label.css-radio-label {
+  background-position: 0 -15px;
+  color: @text-color;
+}
+input[type=radio].css-radio:disabled + label.css-radio-label {
+  opacity: 0.5;
+  color: @text-color;
+}
+label.css-radio-label {
+  background-image: url(/assets/img/icons/radio.png);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+label.css-radio-label-danger {
+  background-image: url(/assets/img/icons/radio_danger.png);
+}
+label.css-radio-label-dark {
+  background-image: url(/assets/img/icons/radio_dark.png);
+}
+label.css-radio-label-info {
+  background-image: url(/assets/img/icons/radio_info.png);
+}
+label.css-radio-label-success {
+  background-image: url(/assets/img/icons/radio_success.png);
+}
+label.css-radio-label-warning {
+  background-image: url(/assets/img/icons/radio_warning.png);
+}
+label.css-radio-label-white {
+  background-image: url(/assets/img/icons/radio_white.png);
+}
+
+// Select
+
+// @media screen and (-webkit-min-device-pixel-ratio:0) {
+  select.custom-select {
+    border-radius: 0;
+    background: url('/assets/img/icons/up-down_dark.png') no-repeat 100% @input-bg;
+    border: none;
+    outline: none;
+    display: inline-block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    text-indent: 0.01px;
+    text-overflow: '';
+  }
+  .custom-select {
+    padding-right: 18px;
+  }
+//}
+
+select.custom-select:disabled {
+  opacity: 0.6;
+  background: url('/assets/img/icons/up-down_dark.png') no-repeat 100% @input-bg;
+  color: @text-color;
+}
+
+select.custom-select-danger {
+  background: url('/assets/img/icons/up-down_white.png') no-repeat 100% @brand-danger;
+  color: @white;
+}
+select.custom-select-dark {
+  background: url('/assets/img/icons/up-down_white.png') no-repeat 100% @text-color;
+  color: @white;
+}
+select.custom-select-info {
+  background: url('/assets/img/icons/up-down_white.png') no-repeat 100% @brand-info;
+  color: @white;
+}
+select.custom-select-success {
+  background: url('/assets/img/icons/up-down_white.png') no-repeat 100% @brand-success;
+  color: @white;
+}
+select.custom-select-warning {
+  background: url('/assets/img/icons/up-down_white.png') no-repeat 100% @brand-warning;
+  color: @white;
+}
+select.custom-select-white {
+  background: url('/assets/img/icons/up-down_dark.png') no-repeat 100% @white;
+}
+
+
+
+
+
+
+
+

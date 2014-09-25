@@ -1,0 +1,37 @@
+//
+// Dropzone
+// --------------------------------------------------
+
+.dropzone {
+  .well;
+   min-height: 300px;
+   max-width: 700px;
+   text-align: center;
+   vertical-align: middle;
+   padding-top: 75px;
+   .dz-message {
+    font-size: 35px;
+    font-weight: bold;
+   }
+}
+.img-upload {
+  img {
+    max-width: 500px;
+  }
+}
+
+
+.admin-dropzone {
+  background: @gray-lighter;
+  margin-bottom: 0;
+  padding: 60px 40px;
+  .dz-default.dz-message{
+    color: rgba(red(@gray-dark), green(@gray-dark), blue(@gray-dark), 0.7);
+    font-size: 16px;
+    font-style: italic;
+    margin-top: 0;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}

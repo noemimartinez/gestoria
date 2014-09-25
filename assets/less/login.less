@@ -1,0 +1,148 @@
+// Login
+
+.login-header {
+  background-color: @brand-warning;
+  color: @text-color;
+  height: 636px;
+  @media (max-width: @grid-float-breakpoint) {
+    height: 430px;
+    padding: 5px;
+  }
+}
+.login {
+  background: @navbar-default-bg;
+  box-sizing: border-box;
+  color: @text-color;
+  padding: 20px;
+  margin-top: 120px;
+
+  h3 {
+    font-size: 22px;
+    font-weight: @font-bold;
+    color: @text-color;
+    .text-uppercase();
+    margin: 0;
+    padding-bottom: 20px;
+  }
+  p {
+    font-size: 16px;
+    font-weight: @font-light;
+    padding: 20px 120px;
+    text-align: center;
+    margin: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+
+  @media (max-width: @grid-float-breakpoint) {
+    margin-top: 15px;
+    p {
+      padding: 20px;
+    }
+  }
+}
+.login-footer {
+  color: @text-color;
+  padding-bottom: 10px;
+}
+.login-success {
+  margin-top: 250px;
+  padding: 40px;
+}
+.login-newpassword {
+  padding-bottom: 20px;
+}
+
+
+// Signup //
+
+.signup-header {
+  background-color: @brand-info;
+  color: @text-color;
+  height: 636px;
+  @media (max-width: @grid-float-breakpoint) {
+    height: 630px;
+    padding: 5px;
+  }
+}
+.signup {
+  background: @navbar-default-bg;
+  box-sizing: border-box;
+  color: @text-color;
+  margin: 82px auto;
+  padding: 20px 20px 0;
+
+  h3 {
+    font-size: 22px;
+    font-weight: @font-bold;
+    color: @text-color;
+    .text-uppercase();
+    margin: 0;
+    padding-bottom: 20px;
+  }
+  p {
+    font-size: 16px;
+    font-weight: @font-light;
+    padding: 20px 120px;
+    text-align: center;
+    margin: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+  .form-group {
+    margin-bottom: 10px;
+    button {
+      margin-top: 10px;
+    }
+  }
+  @media (min-width: @screen-tablet) and (max-width: @screen-desktop) {
+    margin-top: 21px;
+  }
+  @media (max-width: @screen-tablet) {
+    margin-top: 15px;
+  }
+  @media (max-width: @grid-float-breakpoint) {
+    padding-top: 10px;
+  }
+}
+
+.checkbox, .checkbox input[type="checkbox"] {
+  a {
+    font-weight: @font-bold;
+    text-decoration: none;
+  }
+}
+
+//Admin login
+
+.container-login-admin {
+  .login-header {
+    background-color: @brand-warning;
+    color: @text-color;
+    height: 620px;
+    @media (max-width: @grid-float-breakpoint) {
+      height: 555px;
+      padding: 5px;
+    }
+  }
+  .logo-admin-login {
+    height: 100px;
+    padding-top: 45px;
+    @media (max-width: @grid-float-breakpoint) {
+      height: 90px;
+      margin-top: 10px;
+      padding-top: 45px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
