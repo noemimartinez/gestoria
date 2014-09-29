@@ -1,0 +1,189 @@
+//
+// Home
+// --------------------------------------------------
+
+.container-body {
+  background: @gray-lighter;
+  min-height: 350px;
+}
+
+// Accessos rapidos
+
+.box-access-home {
+  position: relative;
+  min-height: 1px;
+  float: left;
+  width: percentage(1 / 6);
+  background: @white;
+
+  .btn-group {
+    .access-home {
+      text-align: center;
+      a {
+        border-right: none;
+        padding-left: 20px;
+        padding-bottom: 14px;
+        padding-top: 40px;
+        text-align: center;
+
+        h5 {
+          font-size: 18px;
+          color: @blue;
+          .text-uppercase();
+        }
+        h4 {
+          font-size: 26px;
+          color: @blue;
+        }
+        img {
+          height: 50px;
+        }
+      }
+    }
+  }
+  @media (min-width: @screen-desktop) and (max-width: @screen-lg-desktop) {
+    width: percentage(1 / 6);
+  }
+  @media (min-width: @screen-tablet) and (max-width: @screen-desktop) {
+    width: percentage(1 / 6);
+    .btn-group {
+      .access-home {
+        a {
+          border-right: 10px;
+          padding-left: 10px;
+          padding-bottom: 14px;
+          padding-top: 22px;
+
+          h5 {
+            font-size: 14px;
+          }
+          h4 {
+            font-size: 26px;
+            color: @blue;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: @screen-tablet) {
+    width: percentage(1 / 3);
+    .btn-group {
+      .access-home {
+        a {
+          border-right: 10px;
+          padding-left: 10px;
+          padding-bottom: 14px;
+          padding-top: 22px;
+
+          h5 {
+            font-size: 14px;
+          }
+          h4 {
+            font-size: 26px;
+            color: @blue;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 600px ) {
+    width: percentage(1 / 2);
+    .btn-group {
+      .access-home {
+        a {
+          border-right: 10px;
+          padding-left: 10px;
+          padding-bottom: 14px;
+          padding-top: 22px;
+
+          h5 {
+            font-size: 14px;
+          }
+          h4 {
+            font-size: 26px;
+            color: @blue;
+          }
+        }
+      }
+    }
+  }
+}
+
+.container-access-home {
+  min-height: 200px;
+  .box-access-home:nth-child(2) {
+    .access-home {
+      a {
+        h5 {
+          color: @orange;
+        }
+        h4 {
+          color: @orange;
+        }
+      }
+    }
+  }
+  .box-access-home:nth-child(3) {
+    .access-home {
+      a {
+        h5 {
+          color: @magenta;
+        }
+        h4 {
+          color: @magenta;
+        }
+      }
+    }
+  }
+  .box-access-home:nth-child(4) {
+    .access-home {
+      a {
+        h5 {
+          color: @green;
+        }
+        h4 {
+          color: @green;
+        }
+      }
+    }
+  }
+  .box-access-home:nth-child(5) {
+    .access-home {
+      a {
+        h5 {
+          color: @yellow;
+        }
+        h4 {
+          color: @yellow;
+        }
+      }
+    }
+  }
+  .box-access-home:nth-child(6) {
+    .access-home {
+      a {
+        h5 {
+          color: @green-light;
+        }
+        h4 {
+          color: @green-light;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

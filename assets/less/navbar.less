@@ -87,6 +87,8 @@
 .navbar-static-top {
   background: transparent;
   border: none;
+  min-height: 46px;
+
   .navbar-phone {
     display: none;
   }
@@ -138,6 +140,25 @@
           color: @gray-dark;
         }
       }
+    }
+  }
+  .navbar-general-collapsed {
+    display: inline-block;
+    width: 80%;
+
+    .navbar-active-phone {
+      text-align: left;
+      padding-top: 20px;
+      padding-left: 30px;
+      font-weight: 600;
+
+      img {
+        height: 20px;
+        margin-right: 10px;
+      }
+    }
+    .navbar-active-phone:hover {
+      background: @white;
     }
   }
   @media (min-width: @screen-desktop) and (max-width: @screen-lg-desktop) {
@@ -218,6 +239,10 @@
 .tab-content {
   margin-top: 20px;
 }
+
+
+
+
 
 
 

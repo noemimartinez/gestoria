@@ -1,27 +1,59 @@
+// Footer
+
 .footer {
-  padding: 40px 0 35px;
+  background-color: @gray-lighter;
+  font-weight: @headings-font-weight;
+  color: @gray-dark;
+  padding: 20px;
+  padding-top: 10px;
   text-align: center;
-  p {
-    font-size: 20px;
+  margin-top: -43px;
+
+  li > a {
+    color: @gray-dark;
+    text-decoration: none;
+    &:hover {
+      color: @green;
+    }
   }
-  @media (max-width: @grid-float-breakpoint) {
+  p {
+    font-size: 14px;
+    .text-uppercase();
+    font-weight: @headings-font-weight;
+    margin: 0;
+    font-weight: 600;
+
+    span {
+      color: @blue;
+      font-weight: 600;
+      padding-bottom: 10px;
+    }
+  }
+  @media (min-width: @screen-phone) and (max-width: @screen-tablet) {
     p {
       font-size: 14px;
     }
   }
-}
-.index-footer {
-  padding: 10px 0 0px;
-  text-align: center;
-  .text-uppercase();
-  p {
-    font-size: 12px;
-    font-weight: 200;
-    margin-bottom: 10px;
+  @media (max-width: @screen-phone) {
+    padding: 10px;
+    padding-top: 10px;
+    margin-top: 16px;
   }
-  @media (max-width: @grid-float-breakpoint) {
-    p {
-      font-size: 8px;
+}
+
+.buttons {
+  margin-bottom: 10px;
+  a {
+    text-decoration: none;
+    color: darken(@body-bg, 0%);
+    &:hover {
+      color: @green;
+    }
+  }
+  .fa-inverse {
+    color: @text-color;
+    &:hover {
+      color: @body-bg;
     }
   }
 }
