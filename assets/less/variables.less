@@ -40,7 +40,7 @@
 @brand-primary:         @gray;
 @brand-success:         @blue;
 @brand-info:            @orange;
-@brand-warning:         @yellow;
+@brand-warning:         @green-light;
 @brand-danger:          @magenta;
 
 
@@ -134,12 +134,12 @@
 @table-condensed-cell-padding:       6px;
 
 @table-bg:                           transparent; // overall background-color
-@table-bg-accent:                    lighten(@gray-dark, 75%); // for striping
+@table-bg-accent:                    @gray-lighter; // for striping
 @table-bg-head-accent:               @gray-dark; // Custom head-accent
 @table-bg-hover:                     @gray-lighter;
 @table-bg-active:                    @table-bg-hover;
 
-@table-border-color:                 @table-bg-head-accent; // table and cell border
+@table-border-color:                 @gray-lighter; // table and cell border
 
 
 // Buttons
@@ -176,7 +176,7 @@
 @btn-danger-bg:                  @brand-danger;
 @btn-danger-border:              @white;
 @btn-danger-hover:               darken(@btn-danger-bg, 2%);
-@btn-danger-table:              @brand-danger;
+@btn-danger-table:               @brand-danger;
 
 @btn-info-color:                 @white;
 @btn-info-bg:                    @brand-info;
