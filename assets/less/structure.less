@@ -5,6 +5,7 @@
   min-height: 600px;
   padding: 22px 20px;
   height: 100%;
+  float: left;
 
   .container-filter {
     position: relative;
@@ -18,6 +19,16 @@
     h5 {
       .text-uppercase();
       font-size: 12px;
+    }
+    a {
+      text-align: left;
+      img {
+        height: 20px;
+        position: absolute;
+        right: 30px;
+        top: 31px;
+      }
+      margin-bottom: 20px;
     }
     .input-group-addon {
       padding: 10px;
@@ -48,12 +59,16 @@
     }
     a {
       .text-uppercase();
-      float: right;
+      float: left;
       margin-bottom: 10px;
     }
     .table-complet {
       background-color: @white;
       border: none;
+    }
+    .table-total {
+      padding: 10px;
+      text-align: right;
     }
 
     .form-control {
@@ -78,7 +93,6 @@
     }
   }
 }
-
 
 
 
