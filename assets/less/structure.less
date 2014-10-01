@@ -1,8 +1,13 @@
 // Structure
 
+.container-body-home {
+  min-height: 350px;
+  background: @gray-lighter;
+}
+
 .container-body {
   background: @gray-lighter;
-  min-height: 600px;
+  min-height: 580px;
   padding: 22px 20px;
   height: 100%;
   float: left;
@@ -22,13 +27,14 @@
     }
     a {
       text-align: left;
+      position: relative;
+      margin-bottom: 12px;
       img {
         height: 20px;
         position: absolute;
-        right: 30px;
-        top: 31px;
+        right: 8px;
+        top: 10px;
       }
-      margin-bottom: 20px;
     }
     .input-group-addon {
       padding: 10px;
@@ -57,10 +63,26 @@
       text-align: left;
       padding-left: 10px;
     }
+    p {
+      text-align: center;
+    }
     a {
       .text-uppercase();
       float: left;
       margin-bottom: 10px;
+    }
+    .link-table {
+      text-decoration: none;
+      padding: 0;
+      margin: 0;
+      margin-bottom: 0;
+      .text-uppercase {
+        text-transform: capitalize;
+      }
+      img {
+        height: 18px;
+        padding-left: 15px;
+      }
     }
     .table-complet {
       background-color: @white;
@@ -70,7 +92,6 @@
       padding: 10px;
       text-align: right;
     }
-
     .form-control {
       height: 35px;
       border: 1px solid transparent;
@@ -91,10 +112,18 @@
         text-align: right;
       }
     }
+    .input-group-addon {
+      padding: 7px;
+      background-color: transparent;
+      border: 1px solid @gray-lighter;
+      border-left: none;
+
+      img {
+        height: 18px;
+      }
+    }
   }
 }
-
-
 
 
 

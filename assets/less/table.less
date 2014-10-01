@@ -125,16 +125,16 @@
 // Bordered version
 
 .table-bordered {
-  border: 1px solid @table-border-color;
+  border-left: none;
+  border-right: none;
+
   > thead,
   > tbody,
   > tfoot {
-    border: 1px solid @table-border-color;
     > tr {
       > th,
       > td {
         color: @table-bg-head-accent;
-        .text-uppercase();
         font-weight: 200;
       }
     }
@@ -145,12 +145,26 @@
     > td {
       color: @table-bg-head-accent;
       font-weight: 400;
+      .text-uppercase();
     }
   }
   > tbody > tr {
     > td {
       padding: 0;
+      border-left: none;
+      border-right: none;
+      .text-uppercase {
+        text-transform: capitalize;
+      }
     }
+  }
+  .table-list {
+    padding: 10px;
+    border-right: none;
+    border-left: none;
+  }
+  a {
+    margin: 0;
   }
 }
 .table>thead:first-child>tr:first-child>th {
