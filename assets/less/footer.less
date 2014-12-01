@@ -17,21 +17,21 @@
     }
   }
   p {
-    font-size: 14px;
+    font-size: @font-size-base;
     .text-uppercase();
     font-weight: @headings-font-weight;
     margin: 0;
-    font-weight: 600;
+    font-weight: @font-bold;
 
     span {
       color: @blue;
-      font-weight: 600;
+      font-weight: @font-bold;
       padding-bottom: 10px;
     }
   }
   @media (min-width: @screen-phone) and (max-width: @screen-tablet) {
     p {
-      font-size: 14px;
+      font-size: @font-size-base;
     }
   }
   @media (max-width: @screen-phone) {

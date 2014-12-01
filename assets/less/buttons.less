@@ -9,7 +9,6 @@
 
   .btn {
     width: 100%;
-    border-right: none;
   }
   .btn-default {
     &:active, &:focus {
@@ -41,6 +40,12 @@
 
 // Alternate buttons
 // --------------------------------------------------
+.btn-opcion-active {
+  .button-variant-lighten(@gray-darker; @white; @btn-default-border);
+  &:hover, &:active, &:focus {
+    .button-variant-lighten(@btn-default-color; @btn-default-bg; @btn-default-border);
+  }
+}
 
 .btn-default {
   .button-variant-lighten(@btn-default-color; @btn-default-bg; @btn-default-border);
@@ -48,24 +53,45 @@
     .button-variant-lighten(@btn-default-color; @btn-default-bg; @btn-default-border);
   }
 }
+.btn-default-table {
+  border: none;
+  &:hover, &:active, &:focus {
+    border: none;
+  }
+}
 .btn-primary {
   .button-variant-lighten(@btn-primary-color; @btn-primary-bg; @btn-primary-border);
+}
+.btn-primary-table {
+  border: none;
 }
 // Warning appears as orange
 .btn-warning {
   .button-variant-lighten(@btn-warning-color; @btn-warning-bg; @btn-warning-border);
 }
+.btn-warning-table {
+  border: none;
+}
 // Danger and error appear as red
 .btn-danger {
   .button-variant-lighten(@btn-danger-color; @btn-danger-bg; @btn-danger-border);
+}
+.btn-danger-table {
+  border: none;
 }
 // Success appears as green
 .btn-success {
   .button-variant-lighten(@btn-success-color; @btn-success-bg; @btn-success-border);
 }
+.btn-success-table {
+  border: none;
+}
 // Info appears as blue-green
 .btn-info {
   .button-variant-lighten(@btn-info-color; @btn-info-bg; @btn-info-border);
+}
+.btn-info-table {
+  border: none;
 }
 .btn-green {
   .button-variant-lighten(@btn-green-color; @btn-green-bg; @btn-green-border);

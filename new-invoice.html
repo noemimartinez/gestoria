@@ -79,103 +79,126 @@
             </ul>
           </div>
         </nav>
+        <!-- Contenido Factura -->
         <div class="container-body">
           <div class="container">
-            <!-- Filtro -->
             <div class="container-filter">
-              <form class="form-filter" role="form">
-                <div class="row">
-                  <div class="form-group col-sm-3">
-                    <label class="control-label">Cliente</label>
-                    <select class="form-control custom-select">
-                      <option>Cliente</option>
-                    </select>
-                  </div>
-                  <div class="form-group col-sm-3">
-                    <label class="control-label">Por fecha</label>
-                    <div class="input-group">
-                      <input type='text' class="form-control" placeholder="01-10-2014">
-                      <span class="input-group-addon"><img src="/assets/img/icons/icon3.png" alt=""></span>
-                    </div>
-                  </div>
-                  <div class="form-group col-sm-3">
-                    <label class="control-label">Cobro</label>
-                    <select class="form-control custom-select">
-                      <option>Pagado</option>
-                      <option>Pendiente</option>
-                    </select>
-                  </div>
-                  <div class="form-group col-sm-3">
-                    <button type="submit" class="btn btn-default btn-group-justified">Filtrar</button>
+              <form class="form-inline" role="form">
+                <div class="form-group">
+                  <label class="sr-only">Cliente</label>
+                  <select class="form-control custom-select">
+                    <option>Cliente</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="sr-only">Por fecha</label>
+                  <div class="input-group">
+                    <input type='text' class="form-control" placeholder="01-10-2014">
+                    <span class="input-group-addon"><img src="/assets/img/icons/icon3.png" alt=""></span>
                   </div>
                 </div>
+                <button type="submit" class="btn btn-default">Filtrar</button>
               </form>
             </div>
-            <!-- Menú opciones -->
-            <div class="navbar-options">
-              <div class="row">
-                <div class="col-sm-4">
-                  <div class="btn-group btn-group-justified">
-                    <div class="btn-group">
-                      <a href="" type="submit" class="btn btn-opcion-active">Facturas</a>
-                    </div>
-                    <div class="btn-group">
-                      <a href="" type="submit" class="btn btn-default">Presupuestos</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Listado opcion selecionada -->
             <div class="container-result">
+              <h4>Nueva factura</h4>
+              <a href="" class="btn btn-success btn-success-table">Add Linea <i class="fa fa-plus-circle"></i></a>
               <table class="table table-bordered">
                 <thead>
                   <tr>
-                    <th class="col-sm-1">Estado</th>
-                    <th class="col-sm-2">Cliente</th>
-                    <th class="col-sm-2">Fecha</th>
-                    <th class="col-sm-2">Cobro</th>
-                    <th class="col-sm-2">Importe</th>
-                    <th class="col-sm-2 table-button"><a href="/new-invoice.html" class="btn btn-success btn-success-table btn-block">Nueva Factura</a></th>
+                    <th class="col-xs-6 col-md-3">Tema</th>
+                    <th class="col-md-4">Descripción</th>
+                    <th class="col-md-2">Precio</th>
+                    <th class="col-md-1">Cantidad</th>
+                    <th class="col-md-2 table-total">Total</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td class="table-list"><i class="fa fa-check-square"></i></td>
-                    <td class="table-list"><a href="" class="link-table">Max Olvido</a></td>
-                    <td class="table-list">20/04/2014</td>
-                    <td class="table-list"><a href="" class="link-table">0</a></td>
-                    <td class="table-list">650,00 €</td>
-                    <td class="table-button">
-                      <div class="dropdown">
-                        <button class="btn btn-default btn-default-table btn-block dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
-                          Opciones
-                          <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Abrir</a></li>
-                          <li role="presentation" class="divider"></li>
-                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Cobro</a></li>
-                          <li role="presentation" class="divider"></li>
-                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Enviar</a></li>
-                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mostrar PDF</a></li>
-                          <li role="presentation" class="divider"></li>
-                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Copiar</a></li>
-                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Eliminar</a></li>
-                        </ul>
-                      </div>
-                    </td>
+                    <td><input type='text' class="form-control table-complet" placeholder="Diseño"></td>
+                    <td><input type='text' class="form-control table-complet" placeholder="Elementos de papelería"></td>
+                    <td><input type='text' class="form-control table-complet" placeholder="50 €"></td>
+                    <td><input type='text' class="form-control table-complet" placeholder="10 unid"></td>
+                    <td class="table-total">500 €</td>
                   </tr>
                   <tr>
-                    <td class="table-complet"></td>
-                    <td class="table-complet"></td>
-                    <td class="table-complet"></td>
-                    <td class="table-complet"></td>
-                    <td class="table-complet"></td>
-                    <td class="table-complet"></td>
+                    <td><input type='text' class="form-control table-complet"></td>
+                    <td><input type='text' class="form-control table-complet"></td>
+                    <td><input type='text' class="form-control table-complet"></td>
+                    <td><input type='text' class="form-control table-complet"></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><input type='text' class="form-control table-complet"></td>
+                    <td><input type='text' class="form-control table-complet"></td>
+                    <td><input type='text' class="form-control table-complet"></td>
+                    <td><input type='text' class="form-control table-complet"></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><input type='text' class="form-control table-complet"></td>
+                    <td><input type='text' class="form-control table-complet"></td>
+                    <td><input type='text' class="form-control table-complet"></td>
+                    <td><input type='text' class="form-control table-complet"></td>
+                    <td></td>
                   </tr>
                 </tbody>
               </table>
+              <div class="col-md-3">
+                <div class="row">
+                  <h5>Nota</h5>
+                  <div class="form-group">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <textarea class="form-control form-complet" rows="3"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <h5>Condiciones</h5>
+                  <div class="form-group">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <textarea class="form-control form-complet" rows="3"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container-invoice">
+                <div class="col-md-9">
+                  <div class="form-group">
+                    <div class="row">
+                      <label class="col-sm-5 control-label">Subtotal</label>
+                      <div class="col-sm-7">
+                        <input type="text" class="form-control form-complet">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <label class="col-sm-5 control-label">Fecha de vencimiento</label>
+                    <div class="col-sm-7">
+                      <input type="text" class="form-control form-complet" placeholder="31-12-2014">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="row">
+                      <div class="col-sm-offset-5 col-sm-7">
+                        <div class="btn-group btn-group-justified">
+                          <div class="btn-group">
+                            <a href="" type="submit" class="btn btn-success">Descargar PDF</a>
+                          </div>
+                          <div class="btn-group">
+                            <a href="" type="submit" class="btn btn-info">Guardar</a>
+                          </div>
+                          <div class="btn-group">
+                            <a href="" type="submit" class="btn btn-warning">Enviar</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
