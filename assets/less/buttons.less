@@ -47,6 +47,14 @@
   }
 }
 
+.btn-filter {
+  .button-variant-lighten(@white; @blue-dark; @blue-dark);
+  &:hover, &:active, &:focus {
+    .button-variant-lighten(@white; @blue-dark; @blue-dark);
+  }
+}
+
+
 .btn-default {
   .button-variant-lighten(@btn-default-color; @btn-default-bg; @btn-default-border);
   &:hover, &:active, &:focus {

@@ -54,6 +54,7 @@
 }
 
 .dropdown-menu {
+  .clearfix();
   border: none;
   margin: 0;
   padding: 0;
@@ -62,11 +63,20 @@
     padding: 8px 20px;
 
     &:hover{
-      background-color: lighten(@gray-dark, 70%); 
+      background-color: lighten(@gray-dark, 70%);
     }
   }
   .divider {
-    margin: 0;
+    height: 1px;
+    margin: 10px;
+    overflow: visible;
     background-color: @gray-lighter;
   }
 }
+
+
+
+
+
+
+
